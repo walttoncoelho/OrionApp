@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik } from 'formik';
+import { Link } from 'react-router-dom';
 
 export const Login = () => (
     
@@ -60,7 +61,9 @@ export const Login = () => (
           <button type="submit" disabled={isSubmitting}>
             Submit
           </button>
-          <p>Ainda não tem cadastro? <strong>Cadastre Aqui!</strong></p>
+          <p>Ainda não tem cadastro? <strong>
+          <Link to="/register"><strong>Cadastre-se Aqui!</strong></Link>
+          </strong></p>
         </form>
       )}
     </Formik>
